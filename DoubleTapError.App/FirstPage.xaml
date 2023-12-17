@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoubleTapError.App.FirstPage"
+             Title="FirstPage">
+    <VerticalStackLayout>
+
+        <VerticalStackLayout.GestureRecognizers>
+            <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="OnGesture" />
+            <SwipeGestureRecognizer Direction="Up,Down,Left,Right" Swiped="OnGesture" />
+        </VerticalStackLayout.GestureRecognizers>
+
+        <Label 
+            Text="Welcome to first page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
